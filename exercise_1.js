@@ -19,13 +19,23 @@ function fase2(fase1)
     const leap = 1948;
     let everyLeapYear = 4;
     let timesLeap = 0
+
+    let Year = prompt("What is the year of your birthday?");
+
     for(let i = leap; i <= Year; i++)
     {
         if (i % everyLeapYear == 0)
         {
-            prompt(i);
+            console.log(i);
             timesLeap ++;
         }
     }
-    prompt(`There was ${timesLeap} leap years between 1948 and your birthday`);
+    
+    if (timesLeap == 1) console.log(`There was ${timesLeap} leap year between 1948 and your birthday`);
+    else console.log(`There were ${timesLeap} leap years between 1948 and your birthday`);
+}
+
+function fase3()
+{
+    
 }
