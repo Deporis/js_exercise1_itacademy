@@ -20,7 +20,7 @@ function fase2(fase1)
     let everyLeapYear = 4;
     let timesLeap = 0
 
-    let Year = prompt("What is the year of your birthday?");
+    let Year = prompt("Which is the year of your birthday?");
 
     for(let i = leap; i <= Year; i++)
     {
