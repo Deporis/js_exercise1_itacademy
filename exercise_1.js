@@ -37,5 +37,34 @@ function fase2(fase1)
 
 function fase3()
 {
+    const leap = 1948;
+    let everyLeapYear = 4;
+    let timesLeap = 0
+
+    let fullName = prompt("What is your full name?");
+    let Day = prompt("Which is your birthday day?");
+    let Month = prompt("And which your month birthday?");
+    let Year = prompt("And at last, the year of your birth?");
+    let Confirmation;
+
+    for(let i = leap; i <= Year; i++)
+    {
+        if (i % everyLeapYear == 0)
+        {
+            console.log(i);
+            timesLeap ++;
+        }
+    }
     
+    if (Year % 4 == 0)
+    {
+        Confirmation = 'El meu any és de traspàs';
+    }
+    else
+    {
+        Confirmation = 'El meu any no és de traspàs';
+    }
+
+    console.log("The years above are the leap years between 1948 and your birthday");
+    console.log(`To sum up: \nEl meu nom és ${fullName} \nVaig néixer al ${Day}/${Month}/${Year} \n${Confirmation}`);
 }
